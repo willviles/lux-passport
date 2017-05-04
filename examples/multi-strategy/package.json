@@ -1,0 +1,23 @@
+{
+  "name": "lux-passport-multi-strategy-example",
+  "version": "0.0.1",
+  "description": "Lux Passport example app with multiple strategies",
+  "scripts": {
+    "start": "lux serve",
+    "test": "lux test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "6.17.0",
+    "babel-preset-lux": "2.0.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "knex": "0.12.6",
+    "lux-framework": "1.1.7",
+    "lux-passport": "file:../../",
+    "sqlite3": "3.1.8"
+  },
+  "engines": {
+    "node": ">= 6.0"
+  }
+}

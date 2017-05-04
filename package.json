@@ -1,0 +1,59 @@
+{
+  "name": "lux-passport",
+  "version": "0.0.0",
+  "description": "Passport authentication middleware for Lux API framework.",
+  "keywords": [
+    "passport",
+    "authentication",
+    "strategy",
+    "session",
+    "lux",
+    "lux-middleware"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willviles/lux-passport.git"
+  },
+  "bugs": {
+    "url": "http://github.com/willviles/lux-passport/issues"
+  },
+  "author": "Will Viles <will@vil.es>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel lib -d dist --source-maps",
+    "test": "mocha --compilers js:babel-core/register -R spec",
+    "coverall": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.defaultsdeep": "^4.6.0",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-destructuring": "^6.19.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-exponentiation-operator": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "coveralls": "^2.11.14",
+    "eslint": "^3.19.0",
+    "mocha": "^3.1.2",
+    "nyc": "^10.1.2"
+  }
+}
