@@ -1,6 +1,6 @@
 {
   "name": "lux-passport",
-  "version": "0.0.0",
+  "version": "0.0.1-beta1",
   "description": "Passport authentication middleware for Lux API framework.",
   "keywords": [
     "passport",
